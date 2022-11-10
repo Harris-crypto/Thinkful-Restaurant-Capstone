@@ -1,4 +1,3 @@
-const reservationsController = require("../../reservations/reservations.controller");
 
 exports.up = function (knex) {
   return knex.schema.createTable("reservations", (table) => {
