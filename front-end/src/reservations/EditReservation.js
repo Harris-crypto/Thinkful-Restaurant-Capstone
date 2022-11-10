@@ -57,6 +57,7 @@ function EditReservation() {
 
   return (
     <main>
+      <ErrorAlert error={reservationsError} />
       <ErrorAlert error={error} />
       <h1> Edit a New Reservation </h1>
       <FormReservation

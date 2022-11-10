@@ -1,7 +1,5 @@
 import React from "react";
-import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import ErrorAlert from "../layout/ErrorAlert";
 
 function FormReservation({ reservation, setReservation, submitHandler }) {
   const history = useHistory();
@@ -21,11 +19,8 @@ function FormReservation({ reservation, setReservation, submitHandler }) {
     }));
   }
 
-  const [error, setError] = useState(null);
-
   return (
     <form onSubmit={submitHandler}>
-      <ErrorAlert error={error} />
       <p>we look forward to your arrival</p>
       <div className="form-group row">
         <label className="col-sm-2 col-form-label">First name:</label>
